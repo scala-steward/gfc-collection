@@ -1,4 +1,4 @@
-name := "gfc-time"
+name := "gfc-collection"
 
 organization := "com.gilt"
 
@@ -26,14 +26,14 @@ publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }
 
-licenses := Seq("Apache-style" -> url("https://raw.githubusercontent.com/gilt/gfc-time/master/LICENSE"))
+licenses := Seq("Apache-style" -> url("https://raw.githubusercontent.com/gilt/gfc-collection/master/LICENSE"))
 
-homepage := Some(url("https://github.com/gilt/gfc-time"))
+homepage := Some(url("https://github.com/gilt/gfc-collection"))
 
 pomExtra := (
   <scm>
-    <url>https://github.com/gilt/gfc-time.git</url>
-    <connection>scm:git:git@github.com:gilt/gfc-time.git</connection>
+    <url>https://github.com/gilt/gfc-collection.git</url>
+    <connection>scm:git:git@github.com:gilt/gfc-collection.git</connection>
   </scm>
   <developers>
     <developer>
