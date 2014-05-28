@@ -1,19 +1,16 @@
 package com.gilt.gfc.collection
 
-import org.scalatest.testng.TestNGSuite
-import org.scalatest.matchers.ShouldMatchers
-import org.testng.annotations.Test
+import org.scalatest.{Matchers, FunSuite}
 
-class CircularBufferTest extends TestNGSuite with ShouldMatchers {
+class CircularBufferTest extends FunSuite with Matchers {
 
-  @Test
-  def testBasics() {
+  test("Basics") {
     val buffer = new CircularBuffer[Int](5)
 
     buffer.toIterator.toList should equal(List())
     buffer.size should equal(0)
-    evaluating { buffer.oldest } should produce[AssertionError]
-    evaluating { buffer.newest } should produce[AssertionError]
+    an [AssertionError] should be thrownBy buffer.oldest
+    an [AssertionError] should be thrownBy  buffer.newest
 
     buffer.add(1)
     buffer.toIterator.toList should equal(List(1))
