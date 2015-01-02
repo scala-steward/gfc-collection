@@ -1,6 +1,5 @@
 package com.gilt.gfc.collection
 
-import org.scalatest.matchers.ShouldMatchers
 import org.scalatest.prop.Checkers
 import org.scalatest.{Matchers, FunSuite}
 
