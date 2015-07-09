@@ -1,4 +1,4 @@
-# gfc-collection
+# gfc-collection [![Build Status](https://travis-ci.org/gilt/gfc-collection.svg?branch=master)](https://travis-ci.org/gilt/gfc-collection) [![Coverage Status](https://coveralls.io/repos/gilt/gfc-collection/badge.svg?branch=master&service=github)](https://coveralls.io/github/gilt/gfc-collection?branch=master)
 
 A library that contains scala collection utility classes. Part of the gilt foundation classes.
 
