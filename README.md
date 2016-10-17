@@ -2,6 +2,19 @@
 
 A library that contains scala collection utility classes. Part of the gilt foundation classes.
 
+## Getting gfc-collection
+
+The latest version is 0.0.4, which is cross-built against Scala 2.10.x, 2.11.x and 2.12.0-RC1.
+
+If you're using SBT, add the following line to your build file:
+
+```scala
+libraryDependencies += "com.gilt" %% "gfc-collection" % "0.0.4"
+```
+
+For Maven and other build tools, you can visit [search.maven.org](http://search.maven.org/#search%7Cga%7C1%7Ccom.gilt%20gfc).
+(This search will also list other available libraries from the gilt fundation classes.)
+
 ## Contents and Example Usage
 
 ### com.gilt.gfc.collection.CircularBuffer
