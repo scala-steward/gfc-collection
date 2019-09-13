@@ -6,11 +6,11 @@ organization := "com.gilt"
 
 scalaVersion := "2.12.6"
 
-crossScalaVersions := Seq(scalaVersion.value, "2.11.12", "2.10.7")
+crossScalaVersions := Seq(scalaVersion.value, "2.11.12")
 
-scalacOptions += "-target:jvm-1.7"
+scalacOptions += "-target:jvm-1.8"
 
-javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
+javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5" % Test,
