@@ -1,11 +1,12 @@
 package com.gilt.gfc.collection
 
-import org.scalatest.prop.Checkers
-import org.scalatest.{Matchers, FunSuite}
 
 import scala.math.Ordering
+import org.scalatestplus.scalacheck.Checkers
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 
-class TopNTest extends FunSuite with Matchers with Checkers {
+class TopNTest extends AnyFunSuite with Matchers with Checkers {
 
   import scala.math.Ordering.{ String => StringOrdering }
 
