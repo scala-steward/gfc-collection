@@ -1,8 +1,9 @@
 package com.gilt.gfc.collection
 
-import org.scalatest.{Matchers, FunSuite}
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 
-class CircularBufferTest extends FunSuite with Matchers {
+class CircularBufferTest extends AnyFunSuite with Matchers {
 
   test("Basics") {
     val buffer = new CircularBuffer[Int](5)
