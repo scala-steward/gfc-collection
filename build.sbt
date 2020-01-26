@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.14.3" % Test
 )
 
-ScoverageKeys.coverageMinimum := 92.2
+ScoverageKeys.coverageMinimum := 92.0
 
 ScoverageKeys.coverageFailOnMinimum := true
 
