@@ -26,8 +26,8 @@ jobs:
       run: sbt clean +coverage +test +coverageReport
     - name: Aggregate coverage
       run: sbt +coverageAggregate
-    - name: Coveralls
+    - name: Coveralls publish
       run: sbt +coveralls
-    - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v1.0.1
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
