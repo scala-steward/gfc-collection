@@ -1,4 +1,3 @@
-import scoverage.ScoverageKeys
 
 name := "gfc-collection"
 
@@ -17,10 +16,6 @@ libraryDependencies ++= Seq(
   "org.scalatestplus" %% "scalacheck-1-14" % "3.2.2.0" % Test,
   "org.scalacheck" %% "scalacheck" % "1.15.2" % Test
 )
-
-ScoverageKeys.coverageMinimum := 92.0
-
-ScoverageKeys.coverageFailOnMinimum := true
 
 releaseCrossBuild := true
 
