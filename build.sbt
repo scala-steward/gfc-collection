@@ -5,15 +5,15 @@ organization := "org.gfccollective"
 
 scalaVersion := "2.13.6"
 
-crossScalaVersions := Seq(scalaVersion.value, "2.12.14")
+crossScalaVersions := Seq(scalaVersion.value, "2.12.15")
 
 scalacOptions += "-target:jvm-1.8"
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.2.9" % Test,
-  "org.scalatestplus" %% "scalacheck-1-15" % "3.2.10.0" % Test,
+  "org.scalatest" %% "scalatest" % "3.2.10" % Test,
+  "org.scalatestplus" %% "scalacheck-1-15" % "3.2.9.0" % Test,
   "org.scalacheck" %% "scalacheck" % "1.15.4" % Test
 )
 
