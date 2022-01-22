@@ -27,7 +27,7 @@ object TopN {
     require(items != null, "items must not be null")
     val topN = TopN(n)
     topN.addAll(items)
-    topN.toSeq
+    topN.toSeq()
   }
 
   /** Creates TopN object so that items can be added one at a time. */
