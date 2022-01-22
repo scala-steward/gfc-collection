@@ -60,7 +60,7 @@ final class TopN[T] private(n: Int,
   private var appendIdx = 0
 
   /** Adds a single element. */
-  final def add[TT <: T](x: TT) {
+  final def add[TT <: T](x: TT): Unit = {
     if (appendIdx > endIdx) {
       if (arrayComparator.compare(x.asInstanceOf[Any], topItems(endIdx)) < 0) { insert(x) }
     } else {
@@ -73,7 +73,7 @@ final class TopN[T] private(n: Int,
   }
 
   /** Adds all elements of a given collection. */
-  final def addAll[TT <: T](xs: IterableOnce[TT]) {
+  final def addAll[TT <: T](xs: IterableOnce[TT]): Unit = {
     xs.iterator.foreach(this.add(_))
   }
 
@@ -88,7 +88,7 @@ final class TopN[T] private(n: Int,
     }
   }
 
-  final private[this] def insert(x: T) {
+  final private[this] def insert(x: T): Unit = {
     val insPoint = topItems.search(x).insertionPoint
 
     if (insPoint < endIdx) {
